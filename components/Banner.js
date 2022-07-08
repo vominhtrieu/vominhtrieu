@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Container, Button } from "react-bootstrap";
+import { Image } from "next";
 import styles from "../styles/Banner.module.css";
 
 const FULL_TITLE = "Hi, I'm Vo Minh Trieu";
@@ -28,7 +29,7 @@ export default function Banner() {
             </p>
         </div>
         <div>
-            <img className={styles.avatar} src="/Avatar.jpg" />
+            <Image className={styles.avatar} src="/Avatar.jpg" />
         </div>
     </Container>
 }
