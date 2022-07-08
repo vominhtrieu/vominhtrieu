@@ -54,7 +54,6 @@ export default function Home() {
         <title>Võ Minh Triều | A simple web dev</title>
         <meta name="description" content="My name is Vo Minh Trieu. I'm a full-stack web developer. I'm on the way to be better and better everyday." />
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
       </Head>
 
       <MainNavbar />
