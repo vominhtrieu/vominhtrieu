@@ -19,7 +19,7 @@ export default function MainNavbar({ pageContainer }) {
         pageContainer.current.onscroll = (e) => {
             setPage(Math.round(e.target.scrollTop / document.body.clientHeight));
         }
-    }, []);
+    }, [pageContainer.current]);
 
     useEffect(() => {
         setTimeout(() => {
