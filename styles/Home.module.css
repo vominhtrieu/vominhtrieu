@@ -1,5 +1,26 @@
 .container {
-  padding: 0 2rem;
+  padding: 0;
+}
+
+.pageContainer {
+  scroll-snap-type: y mandatory;
+  scroll-snap-stop: 50vh;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.pageContainer {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.pageContainer::-webkit-scrollbar { /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+.pageContainer > * {
+  scroll-snap-align: start;
 }
 
 .main {

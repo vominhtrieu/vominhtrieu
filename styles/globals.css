@@ -71,4 +71,17 @@ code {
 .navbar-toggler:focus {
   outline: none;
   box-shadow: none;
+  color: black;
+}
+
+.navbar.navbar-light.bg-light.navbar-expand-lg.active {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.389)
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html * {
+  scroll-behavior: smooth;
 }

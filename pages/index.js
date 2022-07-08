@@ -1,53 +1,13 @@
-import Head from 'next/head'
-import { useEffect, useState } from 'react';
+import {useRef} from "react";
+import Head from 'next/head';
 import Banner from '../components/Banner';
 import MainNavbar from '../components/MainNavbar';
 import About from '../components/About';
+import Education from "../components/Education"
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
-  const [scrollAmount, setScrollAmount] = useState(0);
-  const [currentPage, setCurrentPage] = useState(0);
-  useEffect(() => {
-    window.addEventListener('wheel', (event) => {
-      const scrollAmount = parseInt(event.deltaY);
-      setScrollAmount((amount) => amount + scrollAmount);
-    });
-  }, []);
-
-  useEffect(() => {
-    if (scrollAmount > 300) {
-      setCurrentPage((page) => {
-        if (page === 5) {
-          return 5;
-        } else {
-          return page + 1;
-        }
-      })
-      setScrollAmount(0);
-    } else if (scrollAmount < -300) {
-      setCurrentPage((page) => {
-        if (page === 0) {
-          return 0;
-        } else {
-          return page - 1;
-        }
-      });
-      setScrollAmount(0);
-    }
-  }, [scrollAmount])
-
-  let page = null;
-  switch (currentPage) {
-    case 0:
-      page = <Banner />;
-      break;
-    case 1:
-      page = <About />
-      break;
-    default:
-      page = <Banner />;
-  }
+  const pageContainer = useRef(null);
   return (
     <div className={styles.container}>
       <Head>
@@ -56,8 +16,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <MainNavbar />
-      {page}
+      <MainNavbar pageContainer={pageContainer} />
+
+      <div className={styles.pageContainer} ref={pageContainer}>
+        <Banner />
+        <Education id="education" />
+        {/* <About /> */}
+      </div>
     </div>
   )
 }
