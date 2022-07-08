@@ -44,8 +44,8 @@
 
 .contactList {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .contactChannel {
@@ -55,4 +55,16 @@
 
 .contactChannel svg {
     margin-right: 5px;
+}
+
+.contactDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.contactDetail a {
+    text-decoration: none;
 }
