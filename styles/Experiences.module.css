@@ -1,0 +1,150 @@
+.container {
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 56px;
+    flex-direction: column;
+    display: flex;
+}
+
+.container * {
+    overflow: visible !important;
+}
+
+.title {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+.secondary {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(102, 102, 102);
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 18px;
+    color: gray;
+    padding: 0;
+    margin: 0 !important;
+}
+
+.avatar {
+    border-radius: 150px 5px 150px 150px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.3);
+}
+
+.university {
+    width: 150px;
+    height: 150px;
+    flex-basis: 100px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    border-radius: 40px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.3);
+    overflow: visible;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.company {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+
+
+.company:last-child {
+    margin-bottom: 0;
+}
+
+.company::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 4px solid #0A66C2;
+    background-color: white;
+    z-index: 999;
+}
+
+
+@media (max-width: 992px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .company {
+        padding: 0;
+    }
+
+    .company span {
+        display: none !important;
+        margin: 0;
+        padding: 0;
+    }
+
+    .companyContent {
+        flex-grow: 1 !important;
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.time {
+    position: absolute;
+    left: -70px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.companyContent {
+    padding-left: 20px;
+}
+
+.companyName {
+    font-size: 20px;
+}
+
+.role {
+    font-style: italic;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.timeRange {
+    font-style: italic;
+}
+
+.timeline {
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    border-radius: 3px;
+    background-color: #0A66C2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-left: -3px;
+}

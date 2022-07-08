@@ -1,10 +1,12 @@
-import {useRef} from "react";
+import { useRef } from "react";
 import Head from 'next/head';
 import Banner from '../components/Banner';
 import MainNavbar from '../components/MainNavbar';
 import About from '../components/About';
 import Education from "../components/Education"
 import styles from '../styles/Home.module.css';
+import Skills from "../components/Skills";
+import Experiences from "../components/Experiences";
 
 export default function Home() {
   const pageContainer = useRef(null);
@@ -20,7 +22,9 @@ export default function Home() {
 
       <div className={styles.pageContainer} ref={pageContainer}>
         <Banner />
-        <Education id="education" />
+        <Education />
+        <Experiences />
+        <Skills />
         {/* <About /> */}
       </div>
     </div>
