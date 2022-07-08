@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Võ Minh Triều | A simple web dev</title>
-        <meta name="description" content="My name is Vo Minh Trieu. I'm a full-stack web developer. I'm on the way to be better and better everyday." />
+        <title>Võ Minh Triều | Software Engineer</title>
+        <meta name="description" content="My name is Vo Minh Trieu. I'm a full-stack web developer. I mainly use Node.Js and React.Js. I'm on the way to be better and better everyday." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
