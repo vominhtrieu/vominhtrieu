@@ -7,6 +7,8 @@ import Education from "../components/Education"
 import styles from '../styles/Home.module.css';
 import Skills from "../components/Skills";
 import Experiences from "../components/Experiences";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 export default function Home() {
   const pageContainer = useRef(null);
@@ -25,7 +27,8 @@ export default function Home() {
         <Education />
         <Experiences />
         <Skills />
-        {/* <About /> */}
+        <Projects />
+        <Contact />
       </div>
     </div>
   )

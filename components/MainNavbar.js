@@ -23,19 +23,36 @@ export default function MainNavbar({ pageContainer }) {
 
     useEffect(() => {
         setTimeout(() => {
+            let newRoute = "";
+            if (Math.round(pageContainer.current.scrollTop / document.body.clientHeight) !== page) {
+                return;
+            }
             switch (page) {
                 case 0:
-                    router.replace(router.route, router.route);
+                    newRoute = ""
                     break;
                 case 1:
-                    router.replace(router.route, router.route + "#education");
+                    newRoute = "#education";
                     break;
                 case 2:
-                    router.replace(router.route, router.route + "#experiences");
+                    newRoute = "#experiences";
                     break;
                 case 3:
-                    router.replace(router.route, router.route + "#skills");
+                    newRoute = "#skills";
                     break;
+                case 4:
+                    newRoute = "#projects";
+                    break;
+                case 5:
+                    newRoute = "#contact";
+                    break;
+            }
+            if (newRoute === "") {
+                if (window.location.href.includes("#")) {
+                    router.replace(router.route, router.route)
+                }
+            } else if (!window.location.href.includes(newRoute)) {
+                router.replace(router.route, router.route + newRoute)
             }
         }, 500);
     }, [page]);

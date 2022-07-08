@@ -55,7 +55,7 @@ export default function Skills() {
                 <a href="https://unity.com/" className={styles.skillLogo}>
                     <Image src="/Unity.jpg" alt="Unity's Logo" width={100} height={100} title="Unity" />
                 </a>
-                <a href="https://nextjs.org/" className={styles.skillLogo} style={{boxShadow: "none !important"}}>
+                <a href="https://nextjs.org/" className={styles.skillLogo} style={{ boxShadow: "none !important" }}>
                     <Image src="/NextJs.png" alt="NextJs's Logo" width={100} height={100} title="NextJs" />
                 </a>
                 <a href="https://www.mongodb.com/" className={styles.skillLogo}>
@@ -63,6 +63,18 @@ export default function Skills() {
                 </a>
                 <a href="https://jquery.com/" className={styles.skillLogo}>
                     <Image src="/JQuery.png" alt="JQuery's Logo" width={100} height={100} title="JQuery" />
+                </a>
+                <a href="https://docker.com/" className={styles.skillLogo} style={{ background: "white" }}>
+                    <Image src="/Docker.webp" alt="Docker's Logo" width={80} height={70} title="Docker" />
+                </a>
+                <a href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)" className={styles.skillLogo} style={{ boxShadow: "none !important" }}>
+                    <Image src="/CSharp.png" alt="C#'s Logo" width={90} height={90} title="C#" />
+                </a>
+                <a href="https://www.java.com/" className={styles.skillLogo}>
+                    <Image src="/Java.png" alt="Java's Logo" width={50} height={90} title="Java" />
+                </a>
+                <a href="https://www.mysql.com/" className={styles.skillLogo}>
+                    <Image src="/MySQL.png" alt="MySQL's Logo" width={80} height={45} title="MySQL" />
                 </a>
             </div>
         </div>

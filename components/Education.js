@@ -3,7 +3,7 @@ import { Container, Button } from "react-bootstrap";
 import Image from "next/image";
 import styles from "../styles/Banner.module.css";
 
-export default function Education() {
+export default function Banner() {
     return <Container className={styles.container} id="education">
         <div>
             <h2 className={styles.title}>Ho Chi Minh University of Science</h2>
