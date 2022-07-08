@@ -30,6 +30,12 @@ export default function MainNavbar({ pageContainer }) {
                 case 1:
                     router.replace(router.route, router.route + "#education");
                     break;
+                case 2:
+                    router.replace(router.route, router.route + "#experiences");
+                    break;
+                case 3:
+                    router.replace(router.route, router.route + "#skills");
+                    break;
             }
         }, 500);
     }, [page]);

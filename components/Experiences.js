@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import { Container, Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Image from "next/image";
 import styles from "../styles/Experiences.module.css";
 
@@ -19,7 +18,7 @@ export default function Experiences() {
                     <p>4/2022 - Present</p>
                     <p className={styles.description}>
                         Working directly with customers and team on building a coaching system. <br />
-                    Highly document workflow. <br/>
+                        Highly document workflow. <br />
                         Tech stack: Python, React.Js, PostgresSQL, Docker, GraphQL, Appolo GraphQL.
                     </p>
                 </div>

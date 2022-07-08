@@ -1,0 +1,96 @@
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding-top: 56px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container * {
+    overflow: visible !important;
+}
+
+.title {
+    font-size: 36px;
+}
+
+.secondary {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(102, 102, 102);
+    margin: 10px 0;
+}
+
+.description {
+    font-size: 18px;
+    color: gray;
+    max-width: 350px;
+    padding: 0;
+    margin: 0 !important;
+}
+
+.avatar {
+    border-radius: 150px 5px 150px 150px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.3);
+}
+
+@media (max-width: 992px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.university {
+    border-radius: 150px;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.3);
+    overflow: visible;
+    box-sizing: border-box;
+}
+
+.skillList {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.skillLogo {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden !important;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 480px) {
+    .skillLogo {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.skillName {
+    color: black;
+}
+
+.skillLogo * {
+    overflow: hidden;
+}
